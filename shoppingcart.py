@@ -26,7 +26,7 @@ class ShoppingCart():
     def checkout(self, cash_paid):
         """ Function for checking out """
         balance = 0
-        if cash_paid > self.total:
+        if cash_paid > self.total: """ comparing balances with total cost"""
             balance = (cash_paid - self.total)
             return balance
         else:
